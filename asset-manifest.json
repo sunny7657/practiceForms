@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/practiceForms/static/css/main.a7d139de.css",
+    "main.js": "/practiceForms/static/js/main.7e8ac8f0.js",
+    "index.html": "/practiceForms/index.html",
+    "main.a7d139de.css.map": "/practiceForms/static/css/main.a7d139de.css.map",
+    "main.7e8ac8f0.js.map": "/practiceForms/static/js/main.7e8ac8f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7d139de.css",
+    "static/js/main.7e8ac8f0.js"
+  ]
+}

@@ -62,10 +62,10 @@ export class Gallery extends Component {
     return (
       <>
         <SearchForm onSubmit={this.handleSubmit} />
-        {isLoading && <Text testAlign="center">Loading...</Text>}
-        {error && <Text testAlign="center">Error {error}</Text>}
+        {isLoading && <Text style={{ textAlign: 'center' }}>Loading...</Text>}
+        {error && <Text style={{ textAlign: 'center' }}>Error {error}</Text>}
         {query !== '' && images.length === 0 && isLoading === false && (
-          <Text testAlign="center">There is no matches 😒</Text>
+          <Text style={{ textAlign: 'center' }}>There is no matches 😒</Text>
         )}
         <Grid>
           {images.map(({ alt, avg_color, id, src: { large } }) => (

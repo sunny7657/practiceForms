@@ -1,12 +1,28 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
-import { Grid, GridItem, SearchForm, EditForm, Text, Todo } from 'components';
+import { Grid, GridItem, SearchForm, Text, Todo } from 'components';
 
 export class Todos extends Component {
   state = {
     todos: [],
     isDeleted: false,
   };
+
+  componentDidMount() {
+    const localData = localStorage.getItem('todo');
+    if (localData && JSON.parse(localData).length > 0) {
+      this.setState({ todos: JSON.parse(localData) });
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.todos.length !== this.state.todos.length)
+      localStorage.setItem('todo', JSON.stringify(this.state.todos));
+
+    if (prevState.todos.length > this.state.todos.length) {
+      this.setState({ isDeleted: true });
+    }
+  }
 
   handleSubmit = value => {
     this.setState(prevState => ({

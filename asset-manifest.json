@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/practiceForms/static/css/main.a7d139de.css",
-    "main.js": "/practiceForms/static/js/main.cb2be835.js",
+    "main.js": "/practiceForms/static/js/main.87e83d99.js",
     "index.html": "/practiceForms/index.html",
     "main.a7d139de.css.map": "/practiceForms/static/css/main.a7d139de.css.map",
-    "main.cb2be835.js.map": "/practiceForms/static/js/main.cb2be835.js.map"
+    "main.87e83d99.js.map": "/practiceForms/static/js/main.87e83d99.js.map"
   },
   "entrypoints": [
     "static/css/main.a7d139de.css",
-    "static/js/main.cb2be835.js"
+    "static/js/main.87e83d99.js"
   ]
 }
